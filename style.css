@@ -1,8 +1,12 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
 .portfolioProjects {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	
+	justify-content: flex-end;
 }
 
 .portfolioNode {
@@ -27,6 +31,21 @@
 	display: inline;
 }
 
+.nodeTitle {
+	height: 20%;
+	color: mediumblue;
+	padding-bottom: 20%;
+}
+
+header h1 {
+	position: fixed;
+	top: 0;
+	z-index: 500;
+	color: red;	
+}
+
 header p {
+	padding-top: 5%;
 	font-size: 2em;
 }
+

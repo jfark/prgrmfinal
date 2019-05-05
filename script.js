@@ -2,7 +2,7 @@ Vue.component ('the-portfolio', {
 	props: ['title', 'image', 'caption'],
 	template: `
 		<div class="portfolioNode">
-			<h3>{{title}}</h3>
+			<h3 class="nodeTitle">{{title}}</h3>
 			<p class="nodeCaption">{{caption}}</p>
 			<div class="nodeImageContainer"
 				<div class="nodeImage"><img v-bind:src="image" alt="Name"/></div>
@@ -21,7 +21,7 @@ var signedBooksCollection = new Vue ({
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
-				title: "DuBois + Baldwin Reader / MCAD Spring 2019: Typography Final Project",
+				title: "DuBois + Baldwin Reader / MCAD Spring 2019: Typography",
 				image: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
@@ -41,17 +41,17 @@ var signedBooksCollection = new Vue ({
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
-				title: '"My Practice" / MCAD Fall 2018: Design in Context Final Project',
+				title: '"My Practice" / MCAD Fall 2018: Design in Context',
 				image: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
-				title: "Isabella Stuart Gardner Homepage Recreation / MCAD Fall 2018: Web Development Final Project",
+				title: "Isabella Stuart Gardner Homepage Recreation / MCAD Fall 2018: Web Development",
 				image: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
-				title: "Oberlin College Press Website Exercise / MCAD Fall 2018: Web Development ",
+				title: "Oberlin College Press Website Exercise / MCAD Fall 2018: Web Development",
 				image: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
