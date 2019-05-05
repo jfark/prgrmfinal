@@ -1,0 +1,32 @@
+.portfolioProjects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+.portfolioNode {
+	border: 10px solid black;
+	margin: 1%;
+	width: 20%;
+	position: relative;
+}
+
+.nodeImage img {
+	max-width: 100%;
+}
+
+.nodeCaption {
+	z-index: 100;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+
+.portfolioNode:hover .nodeCaption {
+	display: inline;
+}
+
+header p {
+	font-size: 2em;
+}

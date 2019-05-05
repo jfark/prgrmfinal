@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JF Portfolio</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div id="myTrick">
+	      <h1 v-on:click="reverseMessage">{{headerMessage}}</h1>
+		  <p v-on:click="reverseMessage">{{introMessage}}</p>
+	    </div>
+	</header>
+	<main>
+		<div class="portfolioProjects" v-cloak>
+					<div is="the-portfolio" 
+					v-for="project in portfolio"
+					v-bind:title="project.title"
+					v-bind:image="project.image"
+					v-bind:caption="project.caption">
+					</div>
+		</div>
+		
+	</main>
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="script.js"></script>
+</body>
+</html>
