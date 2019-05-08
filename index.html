@@ -13,16 +13,13 @@
 	    </div>
 	</header>
 	<main>
-		<div id="modalTry" v-if="isOpen"> 
-			<div class="portfolioProjects" v-cloak>
+		<div class="portfolioProjects" v-cloak>
 					<div is="the-portfolio" 
 					v-for="project in portfolio"
 					v-bind:title="project.title"
 					v-bind:image="project.image"
 					v-bind:caption="project.caption">
 					</div>
-				<button @click="isOpen=!isOpen">Open</button>
-			</div>
 		</div>
 		
 	</main>
@@ -38,7 +35,10 @@
 	  </div>
 	</div>
 	
+	<div class="enlargebox"></div>
+	
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>

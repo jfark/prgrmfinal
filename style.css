@@ -49,3 +49,9 @@ header p {
 	font-size: 2em;
 }
 
+.enlargebox {
+	background-color:green; 
+	height:100px; 
+	width:100px;
+}
+

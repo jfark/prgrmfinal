@@ -82,7 +82,7 @@ var signedBooksCollection = new Vue ({
       zoom(url) {
         this.selectedNode = url;
       }
-    },
+    }
 	
 });
 
@@ -117,14 +117,19 @@ new Vue({
   }
 });
 
-new Vue({
-	el: '#modalTry',
-	data: function(){
-		return {
-			isOpen: false
-		}
-	}
-})
+
+      $(".portfolioNode").click(function () {
+
+                    $(this).animate({ width: "" });
+
+                });
+      $(".portfolioNode").mouseout(function () {
+
+                    $(this).animate({ width: "90%" });
+
+                });
+
+ 
 
 
 
