@@ -14,6 +14,7 @@ Vue.component ('the-portfolio', {
 var signedBooksCollection = new Vue ({
 	el: ".portfolioProjects",
 	data: {
+		selectedNode: null,
 		portfolio: [
 			{
 				title: "Barnes Foundation Fall 2019 Course Catalog",
@@ -77,6 +78,11 @@ var signedBooksCollection = new Vue ({
 			}
 		]
 	},
+    methods: {
+      zoom(url) {
+        this.selectedNode = url;
+      }
+    },
 	
 });
 
@@ -91,6 +97,33 @@ var myAppSecond = new Vue({
       this.headerMessage = this.headerMessage.split('').reverse().join('')
     }
   }
+});
+
+new Vue({
+  el: '#app',
+  data: {
+    selectedImage: null,
+    images: [
+      'http://via.placeholder.com/400x300?text=image%201',
+      'http://via.placeholder.com/600x400?text=image%202',
+      'http://via.placeholder.com/500x500?text=image%203'
+    ]
+  },
+  methods: {
+    zoom(url) {
+      console.log("Zoom", url);
+      this.selectedImage = url;
+    }
+  }
+});
+
+new Vue({
+	el: '#modalTry',
+	data: function(){
+		return {
+			isOpen: false
+		}
+	}
 })
 
 

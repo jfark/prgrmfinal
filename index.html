@@ -13,16 +13,30 @@
 	    </div>
 	</header>
 	<main>
-		<div class="portfolioProjects" v-cloak>
+		<div id="modalTry" v-if="isOpen"> 
+			<div class="portfolioProjects" v-cloak>
 					<div is="the-portfolio" 
 					v-for="project in portfolio"
 					v-bind:title="project.title"
 					v-bind:image="project.image"
 					v-bind:caption="project.caption">
 					</div>
+				<button @click="isOpen=!isOpen">Open</button>
+			</div>
 		</div>
 		
 	</main>
+	
+	<div id="app">
+	  <div v-if="selectedImage" max-width="85vw">
+	    <img :src="selectedImage" alt="" width="100%" @click.stop="selectedImage = null">
+	    <hr>
+	  </div>
+
+	  <div v-for="url in images">
+	    <img :src="url" width="100px" @click="zoom(url)">
+	  </div>
+	</div>
 	
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="script.js"></script>
