@@ -118,10 +118,10 @@ new Vue({
 });
 
 
-      $(".portfolioNode").click(function () {
-
+      $(".portfolioNode").toggle(function () {
                     $(this).animate({ width: "100%" });
-
+				}, function() {
+					$(this).animate({ width: "20%"});
                 });
       
 
