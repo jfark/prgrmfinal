@@ -120,14 +120,10 @@ new Vue({
 
       $(".portfolioNode").click(function () {
 
-                    $(this).animate({ width: "" });
+                    $(this).animate({ width: "100%" });
 
                 });
-      $(".portfolioNode").mouseout(function () {
-
-                    $(this).animate({ width: "90%" });
-
-                });
+      
 
  
 
