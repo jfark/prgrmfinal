@@ -120,7 +120,7 @@ new Vue({
 	  $(".portfolioNode").toggle(function () {
                     $(this).animate({ width: "100%"});
 				}, function() {
-					$(this).animate({ width: "40%"});
+					$(this).animate({ width: "50%"});
                 });
 				
 				

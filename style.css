@@ -1,20 +1,30 @@
+html {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 
 .portfolioProjects {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 100%;
+	flex-direction: column;
+	align-items: flex-end;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 
 .portfolioNode {
-	border: 10px solid black;
-	margin: 1%;
-	width: 40%;
+	border-top: 10px solid black;
+	border-bottom: 10px solid black;
+	margin-bottom: 1%;
+	width: 50%;
 	position: relative;
+
 }
 
 .nodeImage img {
@@ -26,10 +36,13 @@ body {
 }
 
 .nodeCaption {
-	z-index: 100;
+	z-index: 5;
 	position: absolute;
 	bottom: 0;
+	right: 0;
 	display: none;
+	text-align: right;
+	max-width: 50%;
 }
 
 .portfolioNode:hover .nodeCaption {
@@ -37,21 +50,24 @@ body {
 }
 
 .nodeTitle {
-	height: 20%;
-	color: mediumblue;
-	padding-bottom: 20%;
+	padding-bottom: 25%;
+	z-index: 100;
+	text-align: right;
+	
 }
 
-header h1 {
+header {
 	position: fixed;
 	top: 0;
 	z-index: 500;
 	color: red;	
+	max-width: 50%;
 }
 
 header p {
 	padding-top: 5%;
-	font-size: 2em;
+	font-size: 1.7em;
+	
 }
 
 .enlargebox {
