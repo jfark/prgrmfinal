@@ -111,18 +111,19 @@ new Vue({
   },
   methods: {
     zoom(url) {
-      console.log("Zoom", url);
       this.selectedImage = url;
     }
   }
 });
 
-
-      $(".portfolioNode").toggle(function () {
-                    $(this).animate({ width: "100%" });
+	  
+	  $(".portfolioNode").toggle(function () {
+                    $(this).animate({ width: "100%"});
 				}, function() {
-					$(this).animate({ width: "20%"});
+					$(this).animate({ width: "40%"});
                 });
+				
+				
       
 
  
