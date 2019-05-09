@@ -28,7 +28,7 @@ var signedBooksCollection = new Vue ({
 			},
 			{
 				title: "Future Shuttle Album Art",
-				image: 'images/garf.png',
+				image: 'images/fs.jpg',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
@@ -117,10 +117,9 @@ new Vue({
 });
 
 	  
-	  $(".portfolioNode").toggle(function () {
-                    $(this).animate({ width: "100%"});
-				}, function() {
-					$(this).animate({ width: "50%"});
+	  $(".portfolioNode").click(function () {
+                    $(this).toggleClass("next");
+				
                 });
 				
 				
