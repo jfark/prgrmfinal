@@ -38,6 +38,8 @@ header p {
 	width: 50%;
 	position: relative;
 	overflow: hidden;
+	z-index: 1000;
+	background: white;
 }
 
 
@@ -58,10 +60,6 @@ header p {
 	visibility: hidden;
 	text-align: right;
 	max-width: 50%;
-}
-
-.portfolioNode:hover .nodeCaption {
-	visibility: visible;
 }
 
 .nodeTitle {
@@ -91,6 +89,16 @@ header p {
 	top: 0;
 	left: 0;
 	z-index: -100;
+}
+
+.portfolioNode.next .nodeCaption {
+	z-index: 5;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	visibility: visible;
+	text-align: right;
+	max-width: 50%;
 }
 
 
