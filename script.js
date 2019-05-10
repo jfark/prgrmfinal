@@ -7,6 +7,9 @@ Vue.component ('the-portfolio', {
 			<div class="nodeImageContainer"
 				<div class="nodeImage"><img v-bind:src="image" alt="Name"/></div>
 			</div>
+			<div class="nodeImageContainer2"
+				<div class="nodeImage2"><img v-bind:src="image2" alt="Name"/></div>
+			</div>
 		</div>
 	`
 });
@@ -14,77 +17,81 @@ Vue.component ('the-portfolio', {
 var signedBooksCollection = new Vue ({
 	el: ".portfolioProjects",
 	data: {
-		selectedNode: null,
 		portfolio: [
 			{
 				title: "Barnes Foundation Fall 2019 Course Catalog",
-				image: 'images/garf.png',
+				image: 'images/barnes.jpg',
+				image2: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
 				title: "DuBois + Baldwin Reader / MCAD Spring 2019: Typography",
-				image: 'images/garf.png',
+				image: 'images/reader.png',
+				image2: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
 				title: "Future Shuttle Album Art",
 				image: 'images/fs.jpg',
+				image2: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
 				title: "Digital Animation",
-				image: 'images/garf.png',
+				image: 'images/plants.gif',
+				image2: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
 				title: "Hand & Digitally-Drawn Typeface / MCAD Spring 2019: Typography",
-				image: 'images/garf.png',
+				image: 'images/typeface.png',
+				image2: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
 				title: '"My Practice" / MCAD Fall 2018: Design in Context',
-				image: 'images/garf.png',
+				image: 'images/practice.png',
+				image2: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
 				title: "Isabella Stuart Gardner Homepage Recreation / MCAD Fall 2018: Web Development",
-				image: 'images/garf.png',
+				image: 'images/isg.png',
+				image2: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
 				title: "Oberlin College Press Website Exercise / MCAD Fall 2018: Web Development",
-				image: 'images/garf.png',
+				image: 'images/ocpress.png',
+				image2: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
 				title: "Poster / MCAD Fall 2018: Design in Context",
-				image: 'images/garf.png',
+				image: 'images/poster1.png',
+				image2: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
 				title: "Annotated Poster / MCAD Fall 2018: Design in Context",
-				image: 'images/garf.png',
+				image: 'images/poster2.png',
+				image2: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
 				title: "Future Shuttle Website Exercise / MCAD Fall 2018: Web Development",
-				image: 'images/garf.png',
+				image: 'images/fssite.png',
+				image2: 'images/garf.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
-			{
-				title: "Future Shuttle Website Exercise / MCAD Fall 2018: Web Development",
-				image: 'images/garf.png',
-				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
-			}
 		]
 	},
-    methods: {
-      zoom(url) {
-        this.selectedNode = url;
-      }
-    }
-	
 });
+
+$(".portfolioNode").click(function () {
+              $(this).toggleClass("next");
+          });
+		  
 
 var myAppSecond = new Vue({
   el: '#myTrick',
@@ -99,28 +106,7 @@ var myAppSecond = new Vue({
   }
 });
 
-new Vue({
-  el: '#app',
-  data: {
-    selectedImage: null,
-    images: [
-      'http://via.placeholder.com/400x300?text=image%201',
-      'http://via.placeholder.com/600x400?text=image%202',
-      'http://via.placeholder.com/500x500?text=image%203'
-    ]
-  },
-  methods: {
-    zoom(url) {
-      this.selectedImage = url;
-    }
-  }
-});
 
-	  
-	  $(".portfolioNode").click(function () {
-                    $(this).toggleClass("next");
-				
-                });
 				
 				
       

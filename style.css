@@ -8,6 +8,7 @@ body {
 	padding: 0;
 	max-width: 100%;
 	box-sizing: border-box;
+	font-family: 'Roboto Mono', monospace;
 }
 
 header {
@@ -40,16 +41,15 @@ header p {
 	overflow: hidden;
 	z-index: 1000;
 	background: white;
+	transition: all .3s linear 0s;
 }
-
-
-
 
 .nodeImage img {
 	min-width: 100%;
 	position: absolute;
 	top: 0;
 	z-index: -100;
+	opacity: .25;
 }
 
 .nodeCaption {
@@ -58,16 +58,19 @@ header p {
 	bottom: 0;
 	right: 0;
 	visibility: hidden;
-	text-align: right;
+	text-align: left;
 	max-width: 50%;
 }
 
 .nodeTitle {
-	padding-bottom: 25%;
+	padding-top: 12%;
+	padding-bottom: 12%;
 	z-index: 100;
 	text-align: right;
 	visibility: hidden;
-
+	font-size: 1em;
+	color: red;
+	font-weight: bold;
 }
 
 .portfolioNode:hover .nodeTitle {
@@ -80,15 +83,17 @@ header p {
 	margin-bottom: 1%;
 	width: 100%;
 	position: relative;
+	
 }
 
-.portfolioNode.next img {
+.portfolioNode.next .nodeImage img {
 	min-width: 0%;
 	max-height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: -100;
+	opacity: 1;
 }
 
 .portfolioNode.next .nodeCaption {
@@ -97,16 +102,15 @@ header p {
 	bottom: 0;
 	right: 0;
 	visibility: visible;
-	text-align: right;
+	text-align: left;
 	max-width: 50%;
 }
 
-
-
-
-.enlargebox {
-	background-color:green; 
-	height:100px; 
-	width:100px;
+.portfolioNode.next .nodeTitle {
+	padding-bottom: 25%;
+	z-index: 100;
+	text-align: right;
+	visibility: visible;
+	font-size: 1.5em;
+	color: black;
 }
-

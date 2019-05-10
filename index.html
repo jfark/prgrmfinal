@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title>JF Portfolio</title>
 	<link type="text/css" rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -18,24 +20,13 @@
 					v-for="project in portfolio"
 					v-bind:title="project.title"
 					v-bind:image="project.image"
+					v-bind:image2="project.image2"
 					v-bind:caption="project.caption">
 					</div>
 		</div>
 		
 	</main>
 	
-	<div id="app">
-	  <div v-if="selectedImage" max-width="85vw">
-	    <img :src="selectedImage" alt="" width="100%" @click.stop="selectedImage = null">
-	    <hr>
-	  </div>
-
-	  <div v-for="url in images">
-	    <img :src="url" width="100px" @click="zoom(url)">
-	  </div>
-	</div>
-	
-	<div class="enlargebox"></div>
 	
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
