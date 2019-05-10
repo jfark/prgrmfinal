@@ -45,11 +45,12 @@ header p {
 }
 
 .nodeImage img {
-	min-width: 100%;
+	max-width: 150%;
 	position: absolute;
-	top: 0;
+	top: 0%;
 	z-index: -100;
 	opacity: .25;
+	filter: hue-rotate(0deg) brightness(90%) grayscale(0%);
 }
 
 .nodeCaption {
@@ -66,11 +67,12 @@ header p {
 	padding-top: 12%;
 	padding-bottom: 12%;
 	z-index: 100;
-	text-align: right;
+	text-align: center;
 	visibility: hidden;
-	font-size: 1em;
+	font-size: 1.3em;
 	color: red;
 	font-weight: bold;
+	font-style: italic;
 }
 
 .portfolioNode:hover .nodeTitle {
@@ -104,13 +106,21 @@ header p {
 	visibility: visible;
 	text-align: left;
 	max-width: 50%;
+	background: white;
 }
 
 .portfolioNode.next .nodeTitle {
 	padding-bottom: 25%;
 	z-index: 100;
 	text-align: right;
-	visibility: visible;
+	visibility: hidden;
 	font-size: 1.5em;
 	color: black;
+	font-style: italic;
+}
+
+form {
+	max-width: 45%;
+	position: fixed;
+	bottom: 3%;
 }

@@ -15,14 +15,28 @@
 	    </div>
 	</header>
 	<main>
-		<div class="portfolioProjects" v-cloak>
-					<div is="the-portfolio" 
-					v-for="project in portfolio"
-					v-bind:title="project.title"
-					v-bind:image="project.image"
-					v-bind:image2="project.image2"
-					v-bind:caption="project.caption">
+		<div class="portfolioOverall">
+			<div class="portfolioProjects" v-cloak>
+				<div is="the-portfolio" 
+				v-for="project in portfolio"
+				v-bind:title="project.title"
+				v-bind:image="project.image"
+				v-bind:caption="project.caption">
+				</div>
+			</div>
+			
+			<form v-on:submit.prevent="addProject">
+				<fieldset>
+					<legend>What should my next project be? </legend>
+					<div class="form-group">
+						<label>Title: <input v-model="titleInput" type="text" /></label>
+						<label>Image URL: <input v-model="imageInput" type="text"/></label>
+						<label>Description: <input v-model="captionInput" type="text"/></label>
 					</div>
+					<button type="submit">Add my next project!</button>
+				</fieldset>
+			</form>
+				
 		</div>
 		
 	</main>
