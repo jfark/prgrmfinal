@@ -56,7 +56,7 @@ header p {
 .nodeCaption {
 	z-index: 5;
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	right: 0;
 	visibility: hidden;
 	text-align: left;
@@ -72,6 +72,15 @@ header p {
 	font-size: 1.3em;
 	color: black;
 	font-weight: bold;
+}
+
+.nodeLink {
+	font-size: .5em;
+	color: red;
+	text-align: right;
+	visibility: hidden;
+	position: absolute;
+	bottom: 0;
 }
 
 .portfolioNode:hover .nodeTitle {
@@ -99,7 +108,7 @@ header p {
 .portfolioNode.next .nodeCaption {
 	z-index: 5;
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	right: 0;
 	visibility: visible;
 	text-align: left;
@@ -115,6 +124,16 @@ header p {
 	font-size: 1.5em;
 	color: black;
 	font-style: italic;
+}
+
+.portfolioNode.next .nodeLink {
+	font-size: .5em;
+	color: red;
+	text-align: right;
+	visibility: visible;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 form {
