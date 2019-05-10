@@ -21,7 +21,7 @@ var portfolioProjects = new Vue ({
 			{
 				title: "Barnes Foundation Fall 2019 Course Catalog",
 				image: 'images/barnes.jpg',
-				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
+				caption: "url(https://jfarkas.studio.mcad.edu/webdev/final-project/)I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
 				title: "DuBois + Baldwin Reader / MCAD Spring 2019: Typography",
@@ -35,7 +35,7 @@ var portfolioProjects = new Vue ({
 			},
 			{
 				title: "Digital Animation",
-				image: 'images/plants.gif',
+				image: 'images/plantsfull.gif',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
 			},
 			{
@@ -82,7 +82,7 @@ var portfolioProjects = new Vue ({
 					image: this.imageInput,
 					caption: this.captionInput,
 				};
-				this.portfolio.push(project);
+				this.portfolio.unshift(project);
 				this.titleInput = this.imageInput = this.captionInput = "";
 			}
 		}

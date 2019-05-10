@@ -10,8 +10,8 @@
 <body>
 	<header>
 		<div id="myTrick">
-	      <h1 v-on:click="reverseMessage">{{headerMessage}}</h1>
-		  <p v-on:click="reverseMessage">{{introMessage}}</p>
+	      <h1 v-on:click="reverseMessage" v-cloak>{{headerMessage}}</h1>
+		  <p v-on:click="reverseMessage" v-cloak>{{introMessage}}</p>
 	    </div>
 	</header>
 	<main>
@@ -25,7 +25,7 @@
 				</div>
 			</div>
 			
-			<form v-on:submit.prevent="addProject">
+			<form v-on:submit.prevent="addProject" v-cloak>
 				<fieldset>
 					<legend>What should my next project be? </legend>
 					<div class="form-group">

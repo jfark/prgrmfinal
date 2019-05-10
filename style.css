@@ -15,7 +15,7 @@ header {
 	position: fixed;
 	top: 0;
 	z-index: 3;
-	color: red;	
+	color: black;	
 	max-width: 50%;
 }
 
@@ -70,9 +70,8 @@ header p {
 	text-align: center;
 	visibility: hidden;
 	font-size: 1.3em;
-	color: red;
+	color: black;
 	font-weight: bold;
-	font-style: italic;
 }
 
 .portfolioNode:hover .nodeTitle {
@@ -85,7 +84,6 @@ header p {
 	margin-bottom: 1%;
 	width: 100%;
 	position: relative;
-	
 }
 
 .portfolioNode.next .nodeImage img {
@@ -121,6 +119,8 @@ header p {
 
 form {
 	max-width: 45%;
+	z-index: 3;
 	position: fixed;
+	left: 0;
 	bottom: 3%;
 }
