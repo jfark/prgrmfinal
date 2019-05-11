@@ -19,10 +19,7 @@
 			<div class="portfolioProjects" v-cloak>
 				<div is="the-portfolio" 
 				v-for="project in portfolio"
-				v-bind:title="project.title"
-				v-bind:link="project.link"
-				v-bind:image="project.image"
-				v-bind:caption="project.caption">
+				v-bind:project="project">
 				</div>
 			</div>
 			

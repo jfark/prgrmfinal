@@ -1,17 +1,14 @@
 Vue.component ('the-portfolio', {
-	props: ['title', 'image', 'caption', 'link'],
+	props: ['project'],
 	template: `
 		<div class="portfolioNode">
-			<h3 class="nodeTitle">{{title}}</h3>
-			<p class="nodeCaption">{{caption}}</p>
+			<h3 class="nodeTitle">{{project.title}}</h3>
+			<p class="nodeCaption">{{project.caption}}</p>
 			<div class="nodeImageContainer"
-				<div class="nodeImage"><img v-bind:src="image" alt="title"/></div>
+				<div class="nodeImage"><img v-bind:src="project.image" alt="title"/></div>
 			</div>
-			<div class="nodeLink"
-				<a href="#" v-on:click.prevent="newTab(project.link)">Click me</a>
-			</div>
-		</div>
-	`,
+			<a class="nodeLink" href="#" v-on:mouseover.prevent="newTab(project.link)">Link to Project</a>
+		</div>`,
 	data: function() {
 		return {portfolio: []}
 	},
@@ -31,79 +28,79 @@ var portfolioProjects = new Vue ({
 		portfolio: [
 			{
 				title: "Barnes Foundation Fall 2019 Course Catalog",
-				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				image: 'images/barnes.jpg',
 				caption: "url(https://jfarkas.studio.mcad.edu/webdev/final-project/)I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
+				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 					
 			},
 			{
 				title: "DuBois + Baldwin Reader / MCAD Spring 2019: Typography",
-				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				image: 'images/reader.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
+				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				
 			},
 			{
 				title: "Future Shuttle Album Art",
-				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				image: 'images/fs.jpg',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
+				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				
 			},
 			{
 				title: "Digital Animation",
-				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				image: 'images/plantsfull.gif',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
+				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				
 			},
 			{
 				title: "Hand & Digitally-Drawn Typeface / MCAD Spring 2019: Typography",
-				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				image: 'images/typeface.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
+				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				
 			},
 			{
 				title: '"My Practice" / MCAD Fall 2018: Design in Context',
-				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				image: 'images/practice.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
+				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				
 			},
 			{
 				title: "Isabella Stuart Gardner Homepage Recreation / MCAD Fall 2018: Web Development",
-				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				image: 'images/isg.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
+				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				
 			},
 			{
 				title: "Oberlin College Press Website Exercise / MCAD Fall 2018: Web Development",
-				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				image: 'images/ocpress.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
+				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				
 			},
 			{
 				title: "Poster / MCAD Fall 2018: Design in Context",
-				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				image: 'images/poster1.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
+				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				
 			},
 			{
 				title: "Annotated Poster / MCAD Fall 2018: Design in Context",
-				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				image: 'images/poster2.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
+				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				
 			},
 			{
 				title: "Future Shuttle Website Exercise / MCAD Fall 2018: Web Development",
-				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				image: 'images/fssite.png',
 				caption: "I am currently working as a freelance graphic designer, completing the graphic design of the Barnes Foundation",
+				link: "https://jfarkas.studio.mcad.edu/programming/wk12/prgrmwk12/",
 				
 			},
 		]

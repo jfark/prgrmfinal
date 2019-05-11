@@ -75,10 +75,10 @@ header p {
 }
 
 .nodeLink {
-	font-size: .5em;
+	font-size: 1em;
 	color: red;
 	text-align: right;
-	visibility: hidden;
+	visibility: visible;
 	position: absolute;
 	bottom: 0;
 }
@@ -127,7 +127,7 @@ header p {
 }
 
 .portfolioNode.next .nodeLink {
-	font-size: .5em;
+	font-size: 1em;
 	color: red;
 	text-align: right;
 	visibility: visible;
