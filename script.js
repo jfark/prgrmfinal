@@ -3,13 +3,23 @@ Vue.component ('the-portfolio', {
 	template: `
 		<div class="portfolioNode">
 			<h3 class="nodeTitle">{{title}}</h3>
-			<p class="nodeLink">{{link}}</p>
 			<p class="nodeCaption">{{caption}}</p>
 			<div class="nodeImageContainer"
 				<div class="nodeImage"><img v-bind:src="image" alt="title"/></div>
 			</div>
+			<div class="nodeLink"
+				<a href="#" v-on:click.prevent="newTab(project.link)">Click me</a>
+			</div>
 		</div>
-	`
+	`,
+	data: function() {
+		return {portfolio: []}
+	},
+	methods: {
+		newTab: function(url){
+					window.open(url, "_blank");
+		}
+	}
 });
 
 var portfolioProjects = new Vue ({
