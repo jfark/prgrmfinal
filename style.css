@@ -78,9 +78,10 @@ header p {
 	font-size: 1em;
 	color: red;
 	text-align: right;
-	visibility: visible;
+	visibility: hidden;
 	position: absolute;
 	bottom: 0;
+	right: 0;
 }
 
 .portfolioNode:hover .nodeTitle {
@@ -132,7 +133,7 @@ header p {
 	text-align: right;
 	visibility: visible;
 	position: absolute;
-	bottom: 0;
+	bottom: 3%;
 	right: 0;
 }
 
@@ -141,5 +142,18 @@ form {
 	z-index: 3;
 	position: fixed;
 	left: 0;
-	bottom: 3%;
+	bottom: 0;
+}
+
+label {
+	font-weight: bold;
+}
+
+input {
+	display: block;
+}
+
+button {
+	font-family: 'Roboto Mono', monospace;
+	margin: 3% 0%;
 }
